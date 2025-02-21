@@ -1,9 +1,11 @@
-function App() {
-  const [count, setCount] = useState(0)
+import IncomeExpenseForm from "./IncomeExpenseForm"
+import FinanceSummary from "./FinanceSummary"
 
+function App() {
   return (
     <main>
-      
+      <IncomeExpenseForm/>
+      <FinanceSummary />
     </main>
   )
 }
