@@ -8,12 +8,12 @@ const IncomeExpenseForm = () => {
     const [amount, setAmount] = useState(0)
 
     const handleAddIncome = () => {
-        dispatch(addIncome(amount))
+        dispatch(addIncome(parseInt(amount)))
         setAmount(0)
     }
 
     const handleAddExpense = () => {
-        dispatch(addExpenses(amount))
+        dispatch(addExpenses(parseInt(amount)))
         setAmount(0)
     }
 
